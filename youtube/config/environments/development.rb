@@ -11,6 +11,7 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
   config.hosts << "1fae7943dc584ff6b1b1bd42fbe3afa8.vfs.cloud9.us-east-1.amazonaws.com"
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Show full error reports.
   config.consider_all_requests_local = true
